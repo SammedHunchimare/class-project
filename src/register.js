@@ -23,7 +23,7 @@ const Register = () =>{
     return(
         <div className="container mt-5">
             <div className="row">
-                <div className="col-lg-4 offset-4">
+                <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12">
                     <div class="bg-light rounded p-3">
 						<h3 class="text-center text-danger">
 							<i class="fa fa-suitcase "></i> Vendor Register

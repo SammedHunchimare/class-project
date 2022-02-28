@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import axios from 'axios';
 const Productlist = () =>{
     const[product, updateProduct] = useState([]);
+    const[message , updateMsg] = useState("");
     const getProduct = () =>{
         axios.get("http://localhost:1234/product")
         .then(response=>{
@@ -12,12 +13,11 @@ const Productlist = () =>{
         getProduct();
     },[true]);
 
-    const[message , updateMsg] = useState("");
     const addtocart = (productData) =>{
         axios.post("http://localhost:1234/cart", productData)
         .then(response=>{
             updateMsg(productData.name + " Added in Your Cart !");
-        })
+    })
     }
 
     return(

@@ -62,6 +62,7 @@ const Cart = () =>{
                             <input type="text" className='form-control'
                             onChange={obj=>pickMobile(obj.target.value)} value={mobile} />
                         </div>
+                        {/* m,k,m, */}
                         <div className="mb-3">
                             <label>e-Mail Id</label>
                             <input type="text" className='form-control'
